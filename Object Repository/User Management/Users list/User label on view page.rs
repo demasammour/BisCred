@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>View Link</name>
+   <name>User label on view page</name>
    <tag></tag>
-   <elementGuidId>f92846fa-0268-4fe2-b904-28b36e247351</elementGuidId>
+   <elementGuidId>85329a17-3958-45b8-a000-45a32ec5991a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[text()= ' View ']</value>
+         <value>//span[text()='User']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -35,7 +35,9 @@ WebUI.click(findTestObject('User Management/Create User Elements/Accounts List')
 
 WebUI.click(findTestObject('User Management/Create User Elements/Accounts list first option'))
 
-String SelectedAccount = WebUI.getText(findTestObject('User Management/Create User Elements/Accounts list first option'))
+accountname = WebUI.getText(findTestObject('User Management/Create User Elements/Accounts list first option'))
+
+String accountnameselected = accountname
 
 WebUI.click(findTestObject('User Management/Create User Elements/Roles DDL'))
 
@@ -61,7 +63,15 @@ WebUI.delay(3)
 
 WebUI.sendKeys(findTestObject('User Management/Users list/Search field'), newdynamicemail)
 
-WebUI.click(findTestObject('Object Repository/User Management/Users list/View Link'))
+WebUI.delay(6)
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/Account Name'), SelectedAccounts)
+WebUI.doubleClick(findTestObject('Object Repository/User Management/Users list/View Link'))
+
+WebUI.verifyElementText(findTestObject('User Management/Users list/Email on View page'), newdynamicemail)
+
+WebUI.verifyElementText(findTestObject('User Management/Users list/Active label'), 'Active')
+
+WebUI.verifyElementText(findTestObject('User Management/Users list/Super admin label on view page'), 'Super Admin')
+
+WebUI.verifyElementText(findTestObject('User Management/Users list/Account Name'), accountnameselected)
 

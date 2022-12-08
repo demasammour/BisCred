@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/ks/dzb682wn1433vp4f9c3665m80000gq/T/Katalon/Test Cases/BisCred/User Management/Test User 001-Create User -Super Admin/20221208_120914/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/ks/dzb682wn1433vp4f9c3665m80000gq/T/Katalon/Test Cases/BisCred/User Management/Test User 001-Create User-Super Admin/20221208_155948/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/BisCred/User Management/Test User 001-Create User -Super Admin', new TestCaseBinding('Test Cases/BisCred/User Management/Test User 001-Create User -Super Admin',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/BisCred/User Management/Test User 001-Create User-Super Admin', new TestCaseBinding('Test Cases/BisCred/User Management/Test User 001-Create User-Super Admin',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

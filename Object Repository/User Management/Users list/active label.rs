@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>View Link</name>
+   <name>Active label</name>
    <tag></tag>
-   <elementGuidId>f92846fa-0268-4fe2-b904-28b36e247351</elementGuidId>
+   <elementGuidId>40bd7109-28f3-43bb-bb77-1a12cab5b7f2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[text()= ' View ']</value>
+         <value>//span[text()='Active']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

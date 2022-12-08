@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>View Link</name>
+   <name>Super admin label on view page</name>
    <tag></tag>
-   <elementGuidId>f92846fa-0268-4fe2-b904-28b36e247351</elementGuidId>
+   <elementGuidId>af8864cf-c765-4d44-8b7c-fe9c336fe154</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[text()= ' View ']</value>
+         <value>//span[text()='Super Admin']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
