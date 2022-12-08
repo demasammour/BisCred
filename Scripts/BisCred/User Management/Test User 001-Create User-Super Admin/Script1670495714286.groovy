@@ -27,11 +27,15 @@ WebUI.sendKeys(findTestObject('User Management/Create User Elements/User Name'),
 
 dynamicemail = CustomKeywords.'defaultpakage.custome.randomString'('letters', 9)
 
-WebUI.setText(findTestObject('User Management/Create User Elements/Email field'), dynamicemail + '@cnn.com')
+String newdynamicemail = dynamicemail + '@cnn.com'
+
+WebUI.setText(findTestObject('User Management/Create User Elements/Email field'), newdynamicemail)
 
 WebUI.click(findTestObject('User Management/Create User Elements/Accounts List'))
 
 WebUI.click(findTestObject('User Management/Create User Elements/Accounts list first option'))
+
+String SelectedAccount = WebUI.getText(findTestObject('User Management/Create User Elements/Accounts list first option'))
 
 WebUI.click(findTestObject('User Management/Create User Elements/Roles DDL'))
 
@@ -51,9 +55,13 @@ WebUI.clearText(findTestObject('User Management/Create User Elements/Download Li
 
 WebUI.sendKeys(findTestObject('Object Repository/User Management/Create User Elements/Download Limit'), '1000000')
 
-useremail = WebUI.getText(findTestObject('User Management/Create User Elements/Email field'))
-
 WebUI.click(findTestObject('User Management/Create User Elements/Create User- submit the adding of user'))
 
-WebUI.sendKeys(findTestObject('User Management/Users list/Search field'), useremail)
+WebUI.delay(3)
+
+WebUI.sendKeys(findTestObject('User Management/Users list/Search field'), newdynamicemail)
+
+WebUI.click(findTestObject('Object Repository/User Management/Users list/View Link'))
+
+WebUI.verifyElementText(findTestObject('User Management/Users list/Account Name'), SelectedAccounts)
 
