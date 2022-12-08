@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Name</name>
+   <name>Create User button</name>
    <tag></tag>
-   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
+   <elementGuidId>5b02657a-37bb-41ad-af5a-67426f680e59</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;name&quot;]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//*[@id=&quot;app&quot;]/div[1]/main/div/section/div[1]/div[2]/div[1]/button</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

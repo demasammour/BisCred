@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Email field</name>
+   <name>User Name</name>
    <tag></tag>
-   <elementGuidId>d8065306-c258-4bc4-a5db-d0dfd6c45bff</elementGuidId>
+   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;email&quot;]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[id=&quot;name&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
