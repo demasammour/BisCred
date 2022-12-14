@@ -27,4 +27,4 @@ WebUI.sendKeys(findTestObject('Login Page Elements/Password text field'), 'Abc@1
 
 WebUI.click(findTestObject('Login Page Elements/Sign in button'))
 
-//Hello Dima************
+
