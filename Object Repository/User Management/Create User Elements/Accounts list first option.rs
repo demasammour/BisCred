@@ -6,18 +6,17 @@
    <elementGuidId>e84f3c71-a789-47c7-a492-24a73443435d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//*[contains (text() , 'Account + Company ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>ul[class=&quot;flex flex-col p-0 m-0 list-none&quot;]>li</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

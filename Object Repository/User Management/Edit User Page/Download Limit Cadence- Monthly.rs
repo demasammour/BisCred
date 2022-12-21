@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Name</name>
+   <name>Download Limit Cadence- Monthly</name>
    <tag></tag>
-   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
+   <elementGuidId>5de82b12-0709-4151-bf05-207bdd13792a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id= 'name']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;name&quot;]</value>
+         <value>//span[text()= 'Monthly']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

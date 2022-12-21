@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Name</name>
+   <name>Download Checkbox in edit page</name>
    <tag></tag>
-   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
+   <elementGuidId>4d4105de-8156-4f64-92be-c06bab123ff4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id= 'name']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;name&quot;]</value>
+         <value>//*[@id=&quot;active&quot; and @type=&quot;checkbox&quot; and @class = &quot;w-4 h-4 text-green-500 border-gray-300 rounded cursor-pointer focus:ring-green-500&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

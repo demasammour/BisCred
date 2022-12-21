@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Name</name>
+   <name>Update User button</name>
    <tag></tag>
-   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
+   <elementGuidId>40ddf4d5-ec56-4f0e-9ef3-0433ad432195</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id= 'name']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;name&quot;]</value>
+         <value>//button[text()= ' Update User ']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

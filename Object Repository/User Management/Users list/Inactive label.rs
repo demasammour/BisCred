@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Name</name>
+   <name>Inactive label</name>
    <tag></tag>
-   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
+   <elementGuidId>c9b94302-f97f-4f01-827d-92eef033cbce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id= 'name']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;name&quot;]</value>
+         <value>//span[text()='Inactive']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

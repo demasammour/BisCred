@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>User Name</name>
+   <name>Update Password Section</name>
    <tag></tag>
-   <elementGuidId>e4afc230-87bd-42b8-a119-3c30c1c4f845</elementGuidId>
+   <elementGuidId>41887184-c7b4-4179-aed3-8e7564a37af8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id= 'name']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>input[id=&quot;name&quot;]</value>
+         <value>//h2[text()=' Update Password ']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

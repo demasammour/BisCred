@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test User 001-Create User-Super Admin</name>
+   <name>Test Case 004-Create User-Super Admin, Manager, User</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b8a1a7dc-5cc1-4718-8981-04ba854d957b</testCaseGuid>
+   <testCaseGuid>0e4b2434-9146-498b-83fa-066776639657</testCaseGuid>
 </TestCaseEntity>
