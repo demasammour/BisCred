@@ -17,13 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+WebUI.callTestCase(findTestCase('BisCred/Login/Test Case 001-Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Main Header elements/User Management Main Menu'))
 
-WebUI.sendKeys(findTestObject('Login Page Elements/Email text field'), GlobalVariable.UserName)
+WebUI.click(findTestObject('User Management/Users list/Search field'))
 
-WebUI.sendKeys(findTestObject('Login Page Elements/Password text field'), GlobalVariable.Password)
+WebUI.sendKeys(findTestObject('User Management/Users list/Search field'), 'pilik31390@areosur.com')
+
+WebUI.delay(6)
+
+WebUI.doubleClick(findTestObject('User Management/Users list/Edit Link'))
+
+WebUI.scrollToElement(findTestObject('User Management/Users list/Update Password Section'), 0)
+
+WebUI.sendKeys(findTestObject('User Management/Edit User Page/New Password'), 'Abc@123456789')
+
+WebUI.sendKeys(findTestObject('User Management/Edit User Page/Confirm New Password'), 'Abc@123456789')
+
+WebUI.click(findTestObject('User Management/Edit User Page/Update Password button'))
+
+WebUI.click(findTestObject('Main Header elements/Profile icon'))
+
+WebUI.click(findTestObject('Main Header elements/Logout icon'))
+
+WebUI.sendKeys(findTestObject('Login Page Elements/Email text field'), 'pilik31390@areosur.com')
+
+WebUI.sendKeys(findTestObject('Login Page Elements/Password text field'), 'Abc@123456789')
 
 WebUI.click(findTestObject('Login Page Elements/Sign in button'))
 

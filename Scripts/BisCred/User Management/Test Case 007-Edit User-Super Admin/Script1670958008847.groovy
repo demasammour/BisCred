@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('BisCred/Login/Test Case 001-Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('User Management/Create User Elements/User Management Main Menu'))
+WebUI.click(findTestObject('Main Header elements/User Management Main Menu'))
 
 WebUI.click(findTestObject('User Management/Create User Elements/Create User button'))
 
@@ -35,13 +35,9 @@ WebUI.click(findTestObject('User Management/Create User Elements/Accounts List')
 
 WebUI.click(findTestObject('User Management/Create User Elements/Accounts list first option'))
 
-accountname = WebUI.getText(findTestObject('User Management/Create User Elements/Accounts list first option'))
-
-String accountnameselected = accountname
-
 WebUI.click(findTestObject('User Management/Create User Elements/Roles DDL'))
 
-WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), 'User')
+WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), 'Super Admin')
 
 WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), Keys.chord(Keys.ENTER))
 
@@ -65,13 +61,65 @@ WebUI.sendKeys(findTestObject('User Management/Users list/Search field'), newdyn
 
 WebUI.delay(6)
 
-WebUI.doubleClick(findTestObject('Object Repository/User Management/Users list/View Link'))
+WebUI.doubleClick(findTestObject('User Management/Users list/Edit Link'))
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/Email on View page'), newdynamicemail)
+WebUI.clearText(findTestObject('User Management/Create User Elements/User Name'))
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/Active label'), 'Active')
+WebUI.sendKeys(findTestObject('User Management/Create User Elements/User Name'), 'Test User Updated')
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/User label on view page'), 'User')
+UserName = WebUI.getText(findTestObject('User Management/Create User Elements/User Name'))
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/Account Name'), accountnameselected)
+WebUI.clearText(findTestObject('User Management/Create User Elements/Email field'))
+
+dynamicemail1 = CustomKeywords.'defaultpakage.custome.randomString'('letters', 9)
+
+String newdynamicemail1 = dynamicemail1 + '@cnn.com'
+
+WebUI.setText(findTestObject('User Management/Create User Elements/Email field'), newdynamicemail1)
+
+WebUI.clearText(findTestObject('User Management/Create User Elements/Accounts List'))
+
+WebUI.click(findTestObject('User Management/Create User Elements/Accounts List'))
+
+accountnameonedit = WebUI.getText(findTestObject('User Management/Edit User Page/Another Account list option'))
+
+WebUI.scrollToElement(findTestObject('User Management/Edit User Page/Another Account list option'), 3)
+
+WebUI.click(findTestObject('User Management/Edit User Page/Another Account list option'))
+
+WebUI.click(findTestObject('User Management/Edit User Page/Role DDL-to remove'))
+
+WebUI.click(findTestObject('User Management/Create User Elements/Roles DDL'))
+
+WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), 'Manager')
+
+WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), Keys.chord(Keys.ENTER))
+
+WebUI.verifyElementChecked(findTestObject('User Management/Create User Elements/Activted Checkbox'), 3)
+
+WebUI.verifyElementChecked(findTestObject('User Management/Edit User Page/Download Checkbox in edit page'), 3)
+
+WebUI.click(findTestObject('Object Repository/User Management/Create User Elements/Download Limit Cadence DDL'))
+
+WebUI.click(findTestObject('User Management/Edit User Page/Download Limit Cadence- Monthly'))
+
+WebUI.clearText(findTestObject('User Management/Create User Elements/Download Limit'))
+
+WebUI.sendKeys(findTestObject('Object Repository/User Management/Create User Elements/Download Limit'), '100')
+
+WebUI.click(findTestObject('User Management/Users list/Update User button'))
+
+WebUI.delay(6)
+
+WebUI.verifyElementText(findTestObject('User Management/Edit User Page/Active label -edit user'), 'Active')
+
+WebUI.verifyTextPresent('Test User Updated', false)
+
+WebUI.verifyTextPresent('Automation', false)
+
+WebUI.verifyTextPresent('Manager', false)
+
+WebUI.scrollToElement(findTestObject('User Management/Create User Elements/Download Limit'), 3)
+
+WebUI.verifyEqual(findTestObject('User Management/Create User Elements/Download Limit'), '100')
 

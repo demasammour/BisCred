@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('BisCred/Login/Test Case 001-Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('User Management/Create User Elements/User Management Main Menu'))
+WebUI.click(findTestObject('Main Header elements/User Management Main Menu'))
 
 WebUI.click(findTestObject('User Management/Create User Elements/Create User button'))
 
@@ -33,23 +33,13 @@ WebUI.setText(findTestObject('User Management/Create User Elements/Email field')
 
 WebUI.click(findTestObject('User Management/Create User Elements/Accounts List'))
 
-WebUI.click(findTestObject('User Management/Create User Elements/Accounts list first option'))
-
 accountname = WebUI.getText(findTestObject('User Management/Create User Elements/Accounts list first option'))
 
-String accountnameselected = accountname
+WebUI.click(findTestObject('User Management/Create User Elements/Accounts list first option'))
 
 WebUI.click(findTestObject('User Management/Create User Elements/Roles DDL'))
 
 WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), 'Super Admin')
-
-WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), Keys.chord(Keys.ENTER))
-
-WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), 'Manager')
-
-WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), Keys.chord(Keys.ENTER))
-
-WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), 'User')
 
 WebUI.sendKeys(findTestObject('User Management/Create User Elements/Roles DDL'), Keys.chord(Keys.ENTER))
 
@@ -79,11 +69,7 @@ WebUI.verifyElementText(findTestObject('User Management/Users list/Email on View
 
 WebUI.verifyElementText(findTestObject('User Management/Users list/Active label'), 'Active')
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/Manager label on view page'), 'Manager')
-
-WebUI.verifyElementText(findTestObject('User Management/Users list/User label on view page'), 'User')
-
 WebUI.verifyElementText(findTestObject('User Management/Users list/Super admin label on view page'), 'Super Admin')
 
-WebUI.verifyElementText(findTestObject('User Management/Users list/Account Name'), accountnameselected)
+WebUI.verifyTextPresent('Account + Company', false)
 

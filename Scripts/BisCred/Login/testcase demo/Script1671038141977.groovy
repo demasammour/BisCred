@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.acceptAlert()
+
 WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow()
@@ -26,4 +28,8 @@ WebUI.sendKeys(findTestObject('Login Page Elements/Email text field'), GlobalVar
 WebUI.sendKeys(findTestObject('Login Page Elements/Password text field'), GlobalVariable.Password)
 
 WebUI.click(findTestObject('Login Page Elements/Sign in button'))
+
+WebUI.acceptAlert()
+
+WebUI.acceptAlert()
 

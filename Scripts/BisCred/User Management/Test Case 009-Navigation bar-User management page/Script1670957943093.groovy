@@ -17,13 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.URL)
+WebUI.callTestCase(findTestCase('BisCred/Login/Test Case 001-Login'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Main Header elements/User Management Main Menu'))
 
-WebUI.sendKeys(findTestObject('Login Page Elements/Email text field'), GlobalVariable.UserName)
+WebUI.scrollToElement(findTestObject('User Management/Navigation bar elements/Naviagtion bar'), 3)
 
-WebUI.sendKeys(findTestObject('Login Page Elements/Password text field'), GlobalVariable.Password)
+WebUI.click(findTestObject('User Management/Navigation bar elements/Page five'))
 
-WebUI.click(findTestObject('Login Page Elements/Sign in button'))
+WebUI.delay(5)
+
+WebUI.doubleClick(findTestObject('User Management/Navigation bar elements/Next arrow'))
+
+WebUI.delay(3)
+
+WebUI.doubleClick(findTestObject('User Management/Navigation bar elements/Next arrow'))
+
+WebUI.delay(3)
+
+WebUI.doubleClick(findTestObject('User Management/Navigation bar elements/Next arrow'))
 
